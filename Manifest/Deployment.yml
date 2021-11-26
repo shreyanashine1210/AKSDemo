@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: demoaks 
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demoaks
+  template:
+    metadata:
+      labels:
+        app: demoaks 
+    spec:
+      containers:
+        - name: demoaks 
+          image: kcscr.azurecr.io/demoaks
+          ports:
+          - containerPort: 3000
