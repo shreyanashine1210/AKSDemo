@@ -1,4 +1,4 @@
 FROM hello-world:latest
 COPY . .
-RUN -it ubuntu bash
+RUN images hello-world
 CMD ["cmd", "/C", "type C:\\hello.txt"]
