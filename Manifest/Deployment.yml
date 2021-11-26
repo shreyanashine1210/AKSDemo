@@ -17,3 +17,5 @@ spec:
           image: kcscr.azurecr.io/demoaks
           ports:
           - containerPort: 3000
+      imagePullSecrets:
+        - name: mywebappsecret
