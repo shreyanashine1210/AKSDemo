@@ -1,4 +1,5 @@
 FROM hello-world:latest
 COPY . .
-RUN images hello-world
+RUN echo Hello
+RUN echo World
 CMD ["cmd", "/C", "type C:\\hello.txt"]
