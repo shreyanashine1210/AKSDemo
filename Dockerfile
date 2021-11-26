@@ -1,5 +1,6 @@
-FROM hello-world:latest
-COPY . .
+FROM ubuntu
+RUN apt-get update && apt-get install -y curl
 RUN echo Hello
 RUN echo World
-CMD ["cmd", "/C", "type C:\\hello.txt"]
+ENTRYPOINT [ "echo", "LetsLearn" ]
+EXPOSE 80
