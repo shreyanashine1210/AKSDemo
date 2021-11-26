@@ -1,4 +1,4 @@
 FROM hello-world:latest
 COPY . .
-RUN Capture.PNG
+RUN -it ubuntu bash
 CMD ["cmd", "/C", "type C:\\hello.txt"]
